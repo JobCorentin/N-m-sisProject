@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: b47c267dd6ce21042aebf0dc444c4fba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2354361691708638033
+    second: alien bras gauche_0
+  - first:
+      213: -3374032894621883389
+    second: alien bras gauche_1
+  - first:
+      213: -8330494039850683011
+    second: alien bras gauche_2
+  - first:
+      213: 5162873959553948474
+    second: alien bras gauche_3
+  - first:
+      213: -3267008352468384293
+    second: alien bras gauche_4
+  - first:
+      213: -5746148465150256404
+    second: alien bras gauche_5
+  - first:
+      213: 8727128459266106079
+    second: alien bras gauche_6
+  - first:
+      213: 2919913951350913377
+    second: alien bras gauche_7
+  - first:
+      213: 7052681124475729187
+    second: alien bras gauche_8
+  - first:
+      213: -4818210269069583655
+    second: alien bras gauche_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alien bras gauche_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 52
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9060642975c3cc478891430feedad38
+      internalID: 2354361691708638033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 53
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8ea0c867628cb4c96fddac818f9fe9
+      internalID: -3374032894621883389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 53
+        width: 36
+        height: 42
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783394ebf4a728545bd27618b66c1eea
+      internalID: -8330494039850683011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_3
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 55
+        width: 35
+        height: 44
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b956b6012f78c25448a3e3ccc1cb7ced
+      internalID: 5162873959553948474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_4
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 60
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0ae7cb04a7acf479c61b4db02f1396
+      internalID: -3267008352468384293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 61
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c171bf70e84214a97e5ff253e26f21
+      internalID: -5746148465150256404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_6
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 62
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb5833c529cb7f48847d5490e2cdbb5
+      internalID: 8727128459266106079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_7
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 62
+        width: 38
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef277e722ece2c4ebb42ecd03f254b3
+      internalID: 2919913951350913377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_8
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 59
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2c73e30b68a754cba73db499011003
+      internalID: 7052681124475729187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien bras gauche_9
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 55
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.9, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c14207f3bc1fb54faa0e46ffeb7a7c9
+      internalID: -4818210269069583655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

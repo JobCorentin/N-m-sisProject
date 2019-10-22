@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: ad5ee36abf999a144b62491bf9fd0061
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6213043034503015958
+    second: alien tete_0
+  - first:
+      213: 3560496815703025397
+    second: alien tete_1
+  - first:
+      213: -1559766626082602224
+    second: alien tete_2
+  - first:
+      213: 5721007938305933108
+    second: alien tete_3
+  - first:
+      213: 2385686245088931372
+    second: alien tete_4
+  - first:
+      213: -3771360599210221613
+    second: alien tete_5
+  - first:
+      213: -4363806341497939077
+    second: alien tete_6
+  - first:
+      213: -1823575998201757236
+    second: alien tete_7
+  - first:
+      213: -3481857033368134516
+    second: alien tete_8
+  - first:
+      213: -6905699610675649122
+    second: alien tete_9
+  - first:
+      213: 7499421282819182913
+    second: alien tete_10
+  - first:
+      213: -3015818833791713121
+    second: alien tete_11
+  - first:
+      213: -350190456143856446
+    second: alien tete_12
+  - first:
+      213: 996060937776984765
+    second: alien tete_13
+  - first:
+      213: 1573822408400910032
+    second: alien tete_14
+  - first:
+      213: -973341121718009576
+    second: alien tete_15
+  - first:
+      213: -8349332204112430118
+    second: alien tete_16
+  - first:
+      213: 2470029481073064842
+    second: alien tete_17
+  - first:
+      213: -8161648847202071190
+    second: alien tete_18
+  - first:
+      213: -8927340732986836585
+    second: alien tete_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alien tete_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 91
+        width: 38
+        height: 41
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03540935d4d637d4882b7d061e2f24f7
+      internalID: 6213043034503015958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 99
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e1c1f745cfcca47a1c604c2303ca57
+      internalID: 3560496815703025397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 92
+        width: 38
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d8d903119d9d4d918c57aee197915
+      internalID: -1559766626082602224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 100
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64830f0af686614093c08fefdeda950
+      internalID: 5721007938305933108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 94
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff9a9b8e2617c14e9cd7603441c7590
+      internalID: 2385686245088931372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 102
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cf31fb88b27d04cbc9b602ebff0dcd
+      internalID: -3771360599210221613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_6
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 97
+        width: 37
+        height: 35
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15689965c14ddff46a093b1bab7bc339
+      internalID: -4363806341497939077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 105
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c46c3f6f40b45e4789abf0957fa2fdd
+      internalID: -1823575998201757236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 98
+        width: 37
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7008897c5e2603c45b31e93aa86fcbcd
+      internalID: -3481857033368134516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_9
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 106
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f64b07d39b4a19408f0c43e69c46a6c
+      internalID: -6905699610675649122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_10
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 98
+        width: 37
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b169da63fab9a840a72bb0b61776aa7
+      internalID: 7499421282819182913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_11
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 106
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c1326f44b9d0b498a7f060b794d9e1
+      internalID: -3015818833791713121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_12
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 98
+        width: 37
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79685e9224dcfba488329dc79ecbdb98
+      internalID: -350190456143856446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_13
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 106
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce8755dacaa4a64fa6573740734be47
+      internalID: 996060937776984765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_14
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 97
+        width: 37
+        height: 35
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd326f6f0d73f8d45828b240aa75dcdd
+      internalID: 1573822408400910032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_15
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 105
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e60f35992b23f4bac953abc0c32c75
+      internalID: -973341121718009576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_16
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 92
+        width: 37
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ca9c5c31976dc45a1b4e95c348fdba
+      internalID: -8349332204112430118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_17
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 100
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d00ee84edb2f6a47b81ada6165e9872
+      internalID: 2470029481073064842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_18
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 90
+        width: 37
+        height: 41
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed2654d7d6503e48b32679f6b18e35c
+      internalID: -8161648847202071190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien tete_19
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 98
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df51bfb80d1b1c42a06ad55ee16e88f
+      internalID: -8927340732986836585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

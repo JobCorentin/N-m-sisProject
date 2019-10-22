@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 7810f0cce31b2ab4484fbfb30b00c548
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8734437982805793096
+    second: alien main gauche_0
+  - first:
+      213: -7289173718072553469
+    second: alien main gauche_1
+  - first:
+      213: -4176115492566685971
+    second: alien main gauche_2
+  - first:
+      213: -8012549717608367145
+    second: alien main gauche_3
+  - first:
+      213: -2105827794108514607
+    second: alien main gauche_4
+  - first:
+      213: 7207902054357342791
+    second: alien main gauche_5
+  - first:
+      213: -5866386259198462475
+    second: alien main gauche_6
+  - first:
+      213: -3682015425099266591
+    second: alien main gauche_7
+  - first:
+      213: -1522951130450744534
+    second: alien main gauche_8
+  - first:
+      213: -5691870184228653456
+    second: alien main gauche_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alien main gauche_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 25
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0948a47db272a2489ff251e7ffded5d
+      internalID: -8734437982805793096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 27
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582ff9d143c279440ae692dee7ea8603
+      internalID: -7289173718072553469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 28
+        width: 21
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95836b814191dae45bc7d66d55825ddf
+      internalID: -4176115492566685971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_3
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 30
+        width: 21
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d87709217da9f4695abf7d9648d854
+      internalID: -8012549717608367145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 34
+        width: 20
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83be73cfb184d54db208c475105f402
+      internalID: -2105827794108514607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_5
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 36
+        width: 20
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10eae24720d2384cb641446618b4ddb
+      internalID: 7207902054357342791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_6
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 37
+        width: 20
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d02a06281f27134cab9bbcc1557daa0
+      internalID: -5866386259198462475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_7
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 37
+        width: 21
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a891f44f2e361a749b7601f74de6c520
+      internalID: -3682015425099266591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_8
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 33
+        width: 21
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0192fd123c62e46a09e3115cbd5d9e
+      internalID: -1522951130450744534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien main gauche_9
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 29
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a853e85e6d684245add838a3752893b
+      internalID: -5691870184228653456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
