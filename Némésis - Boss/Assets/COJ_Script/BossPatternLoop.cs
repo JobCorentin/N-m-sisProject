@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossPatternLoop : MonoBehaviour
 {
 
-
+    protected float bossHealth = 150;
     protected int patternRef;
     protected int patternSaved;
+    protected bool canTakeDamage = true;
+    protected float weaponDamage = 5;
+    public Slider healthBar;
     List<int> patternList = new List<int>();
 
     // Start is called before the first frame update
@@ -25,7 +29,7 @@ public class BossPatternLoop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        healthBar.value = bossHealth;
     }
 
     void BossPatternSelection()
@@ -65,5 +69,27 @@ public class BossPatternLoop : MonoBehaviour
         patternList.Remove(patternRef);
         Debug.Log("PatternRef" + patternRef + "has been removed");
         BossPatternSelection();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("It has triggered");
+        if (collision.CompareTag("Bullet"))
+        {
+            if (canTakeDamage == true)
+            {
+                StartCoroutine(takeDamage());
+            }
+        }
+    }
+
+    IEnumerator takeDamage()
+    {
+        bossHealth -= weaponDamage;
+        canTakeDamage = false;
+        Debug.Log("bosshealth =" + bossHealth);
+        yield return new WaitForSeconds(0.5f);
+        canTakeDamage = true;
+
     }
 }
