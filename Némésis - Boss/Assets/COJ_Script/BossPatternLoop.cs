@@ -10,17 +10,20 @@ public class BossPatternLoop : MonoBehaviour
     protected int patternRef;
     protected int patternSaved;
     protected bool canTakeDamage = true;
+    protected bool canDoAnotherOne = true;
     protected float weaponDamage = 5;
     public Slider healthBar;
     List<int> patternList = new List<int>();
 
+
+
+
+
+    // leftArm01Pattern condition and object
     protected GameObject leftArm01;
-
-
-    // leftArmPattern condition and object
     public GameObject leftArm01Prefab;
     protected float leftArm01Speed = 5f;
-    protected bool canDo01 = true;
+    protected bool canDoLeftArm01 = true;
     protected bool canDo02 = false;
     protected bool canDo03 = false;
     protected bool canDo04 = false;
@@ -33,6 +36,30 @@ public class BossPatternLoop : MonoBehaviour
     public GameObject impactPointSpawnPrefab;
     public Color dashNowColor = Color.red;
     public Color normalColor = Color.white;
+
+    //Head01Pattern condition and object
+    protected GameObject Head01;
+    public GameObject Head01Prefab;
+    public LineRenderer laserBeamRenderer;
+    public GameObject newBeamImpactPoint;
+    protected bool canDoHead01 = true;
+    public Transform HeadPoint;
+    public GameObject newBeamPoint;
+    public Transform BeamPoint;
+    public Transform HeadSpawnPoint;
+    private LineRenderer Beam;
+
+    //RightArm01Pattern Condition and object
+    private static Transform[] goToPoints;
+    public GameObject rightArm01;
+    public GameObject rightArm01Prefab;
+    protected Rigidbody2D rightArm01Rb;
+    public Transform rightArmSpawnPoint;
+    private Transform target;
+    private int wavePointsIndex = 0;
+    protected bool canDoRightArm01 = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,12 +67,24 @@ public class BossPatternLoop : MonoBehaviour
         leftArmPoint = leftArm01.transform.GetChild(0).transform;
         leftArm01Rb = leftArm01.GetComponent<Rigidbody2D>();
 
+        Head01 = Instantiate(Head01Prefab, HeadSpawnPoint.transform.position, Quaternion.identity);
+        HeadPoint = Head01.transform.GetChild(0).transform;
+
+        rightArm01 = Instantiate(rightArm01Prefab, rightArmSpawnPoint.transform.position, Quaternion.identity);
+        rightArm01Rb = rightArm01.GetComponent<Rigidbody2D>();
+
         for (int i = 0; i < 3; i++)
         {
             patternList.Add(i);
 
         }
         patternSaved = -1;
+
+        goToPoints = new Transform[transform.childCount];
+        for (int j = 0; j < goToPoints.Length; j++)
+        {
+            goToPoints[j] = rightArm01.transform.GetChild(j);
+        }
         BossPatternSelection();
         
     }
@@ -57,13 +96,25 @@ public class BossPatternLoop : MonoBehaviour
 
 
         // Pattern LeftArm01
-        if(patternRef == 0 && canDo01 == true)
+        if(patternRef == 0 && canDoLeftArm01 == true)
         {
             StartCoroutine(LeftArmPattern01Part1());
-            canDo01 = false;
+            canDoLeftArm01 = false;
         }
-     
-        // Pattern Left Arm01
+
+        //Pattern Head01
+        if (patternRef == 1 && canDoHead01 == true)
+        {
+            StartCoroutine(Head01Pattern());
+            canDoHead01 = false;
+            Debug.Log("Beam activated");
+        }
+        if (patternRef == 2 && canDoRightArm01 == true)
+        {
+            StartCoroutine(RightArm01PAttern());
+            canDoRightArm01 = false;
+            Debug.Log("SLASH !");
+        }
 
 
 
@@ -78,7 +129,6 @@ public class BossPatternLoop : MonoBehaviour
         {
             patternRef = patternList[iCurrentPattern];
             Debug.Log("PatternRef =" + patternRef);
-            StartCoroutine(ExecutePattern());
             if (patternSaved != -1)
             {
                 patternList.Add(patternSaved);
@@ -87,20 +137,7 @@ public class BossPatternLoop : MonoBehaviour
         }
     }
 
-    IEnumerator ExecutePattern()
-    {
-        if (patternRef == 0)
-        {
-            Debug.Log("Pattern ref = 0");
-            canDo01 = true;
-        }
-        else
-        {
-            Debug.Log("pattern is 1 or 2");
-        }
-        yield return new WaitForSeconds(10f);
-        RefreshPattern();
-    }
+
 
     void RefreshPattern()
     {
@@ -203,7 +240,102 @@ public class BossPatternLoop : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Debug.Log("Back to mama");
         leftArm01Rb.position = leftSpawnArmPoint.transform.position;
-        
+        yield return new WaitForSeconds(2f);
+        RefreshPattern();
+        canDoLeftArm01 = true;
     }
   
+
+    IEnumerator Head01Pattern()
+    {
+        bool canSpawn = true;
+        float beamPatternTimer = 4f;
+
+        if (canSpawn == true)
+        {
+            Beam = Instantiate(laserBeamRenderer, HeadPoint.transform.position, Quaternion.identity);
+            newBeamPoint = Instantiate(newBeamImpactPoint, BeamPoint.transform.position, Quaternion.identity);
+            canSpawn = false;
+        }
+
+        while (beamPatternTimer > 0)
+        {
+            Beam.SetPosition(0, HeadPoint.position);
+            Beam.SetPosition(1, newBeamPoint.transform.position);
+            beamPatternTimer -= Time.deltaTime;
+       
+            yield return null;
+        }
+        if (beamPatternTimer < 0)
+        {
+            Destroy(Beam);
+            Destroy(newBeamPoint);
+            canDoHead01 = true;
+            
+        }
+        yield return new WaitForSeconds(4f);
+        RefreshPattern();
+    }
+
+    IEnumerator RightArm01PAttern()
+    {
+        float attackSpeed = 15f;
+        float patternTimer = 1.2f;
+        bool trigger01 = true;
+        bool trigger02 = false;
+        bool trigger03 = false;
+        bool trigger04 = false;
+        bool trigger05 = false;
+        target = goToPoints[0];
+        yield return new WaitForSeconds(0.5f);
+        while (patternTimer > 0)
+        {
+            Vector3 attackDir = target.position - rightArm01.transform.position;
+            rightArm01Rb.velocity = attackDir * attackSpeed;
+            if(patternTimer >= 1.15f && trigger01 == true)
+            {
+                GetNextPoints();
+                trigger01 = false;
+                trigger02 = true;
+            }
+
+            if(patternTimer >= 1f && trigger02 == true)
+            {
+                GetNextPoints();
+                trigger02 = false;
+                trigger03 = true;
+            }
+
+            if (patternTimer >= 0.8f && trigger03 == true)
+            {
+                GetNextPoints();
+                trigger03 = false;
+                trigger04 = true;
+            }
+
+            if (patternTimer >= 0.5f && trigger04 == true)
+            {
+                GetNextPoints();
+                trigger04 = false;
+                trigger05 = true;
+            }
+
+            if (patternTimer >= 0.3f && trigger05 == true)
+            {
+                GetNextPoints();
+                trigger05 = false;
+                
+            }
+            yield return null;
+        }
+        yield return new WaitForSeconds(2f);
+        RefreshPattern();
+
+    }
+
+    void GetNextPoints()
+    {
+        wavePointsIndex++;
+        target = goToPoints[wavePointsIndex];
+    }
 }
