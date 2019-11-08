@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossPatternLoop : MonoBehaviour
 {
 
-    protected float bossHealth = 150;
+    protected float bossHealth = 300;
     protected int patternRef;
     protected int patternSaved;
     protected bool canTakeDamage = true;
@@ -50,16 +50,13 @@ public class BossPatternLoop : MonoBehaviour
     private LineRenderer Beam;
 
     //RightArm01Pattern Condition and object
-    private static Transform[] goToPoints;
+
     public GameObject rightArm01;
     public GameObject rightArm01Prefab;
-    protected Rigidbody2D rightArm01Rb;
     public Transform rightArmSpawnPoint;
-    private Transform target;
-    private int wavePointsIndex = 0;
     protected bool canDoRightArm01 = true;
-
-
+    protected Animator rightArm01Animator;
+    public GameObject damagedGround;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +68,7 @@ public class BossPatternLoop : MonoBehaviour
         HeadPoint = Head01.transform.GetChild(0).transform;
 
         rightArm01 = Instantiate(rightArm01Prefab, rightArmSpawnPoint.transform.position, Quaternion.identity);
-        rightArm01Rb = rightArm01.GetComponent<Rigidbody2D>();
+        rightArm01Animator = rightArm01.GetComponent<Animator>();
 
         for (int i = 0; i < 3; i++)
         {
@@ -80,11 +77,6 @@ public class BossPatternLoop : MonoBehaviour
         }
         patternSaved = -1;
 
-        goToPoints = new Transform[transform.childCount];
-        for (int j = 0; j < goToPoints.Length; j++)
-        {
-            goToPoints[j] = rightArm01.transform.GetChild(j);
-        }
         BossPatternSelection();
         
     }
@@ -107,18 +99,22 @@ public class BossPatternLoop : MonoBehaviour
         {
             StartCoroutine(Head01Pattern());
             canDoHead01 = false;
-            Debug.Log("Beam activated");
+            
         }
         if (patternRef == 2 && canDoRightArm01 == true)
         {
-            StartCoroutine(RightArm01PAttern());
+            StartCoroutine(RightArm01Pattern());
             canDoRightArm01 = false;
-            Debug.Log("SLASH !");
+           
         }
 
 
 
 
+    }
+    private void Update()
+    {
+        bossDeath();
     }
 
     void BossPatternSelection()
@@ -176,7 +172,7 @@ public class BossPatternLoop : MonoBehaviour
 
         while(pattern1Timer > 0)
         {
-            Debug.Log("Wait for it");
+            
             pattern01FirstDir = prepareAttackPoint.position - leftArmPoint.position;
             leftArm01Rb.velocity = pattern01FirstDir * moveSpeed;
             pattern1Timer -= Time.deltaTime;
@@ -201,7 +197,7 @@ public class BossPatternLoop : MonoBehaviour
         {
             
             float impactSpeed = 15f;
-            Debug.Log("And it hits");
+           
             GameObject impactPointSpawn = Instantiate(impactPointSpawnPrefab, ImpactPoint.transform.position, Quaternion.identity);
             pattern01FirstDir = impactPointSpawn.transform.position - leftArmPoint.position;
             leftArm01Rb.velocity = pattern01FirstDir * impactSpeed;
@@ -215,7 +211,7 @@ public class BossPatternLoop : MonoBehaviour
 
     IEnumerator LeftArmPattern01Part3()
     {
-        Debug.Log("and it's stuck");
+        
         pattern01FirstDir = new Vector3(0, 0, 0);
         leftArm01Rb.velocity = pattern01FirstDir * 1;
         yield return new WaitForSeconds(2f);
@@ -228,7 +224,7 @@ public class BossPatternLoop : MonoBehaviour
         float returnSpeed = 10f;
         while (pattern1Timer > 0)
         {
-            Debug.Log("And it's comes back");
+           
             pattern01FirstDir = leftSpawnArmPoint.position - leftArmPoint.position;
             leftArm01Rb.velocity = pattern01FirstDir * returnSpeed;
             pattern1Timer -= Time.deltaTime;
@@ -238,9 +234,10 @@ public class BossPatternLoop : MonoBehaviour
         pattern01FirstDir = new Vector3(0, 0, 0);
         leftArm01Rb.velocity = pattern01FirstDir * 0;
         yield return new WaitForSeconds(1f);
-        Debug.Log("Back to mama");
+       
         leftArm01Rb.position = leftSpawnArmPoint.transform.position;
         yield return new WaitForSeconds(2f);
+        Debug.Log("Refrest the pattern");
         RefreshPattern();
         canDoLeftArm01 = true;
     }
@@ -273,69 +270,35 @@ public class BossPatternLoop : MonoBehaviour
             canDoHead01 = true;
             
         }
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Refrest the pattern");
         RefreshPattern();
     }
 
-    IEnumerator RightArm01PAttern()
+    IEnumerator RightArm01Pattern()
     {
-        float attackSpeed = 15f;
-        float patternTimer = 1.2f;
-        bool trigger01 = true;
-        bool trigger02 = false;
-        bool trigger03 = false;
-        bool trigger04 = false;
-        bool trigger05 = false;
-        target = goToPoints[0];
-        yield return new WaitForSeconds(0.5f);
-        while (patternTimer > 0)
-        {
-            Vector3 attackDir = target.position - rightArm01.transform.position;
-            rightArm01Rb.velocity = attackDir * attackSpeed;
-            if(patternTimer >= 1.15f && trigger01 == true)
-            {
-                GetNextPoints();
-                trigger01 = false;
-                trigger02 = true;
-            }
-
-            if(patternTimer >= 1f && trigger02 == true)
-            {
-                GetNextPoints();
-                trigger02 = false;
-                trigger03 = true;
-            }
-
-            if (patternTimer >= 0.8f && trigger03 == true)
-            {
-                GetNextPoints();
-                trigger03 = false;
-                trigger04 = true;
-            }
-
-            if (patternTimer >= 0.5f && trigger04 == true)
-            {
-                GetNextPoints();
-                trigger04 = false;
-                trigger05 = true;
-            }
-
-            if (patternTimer >= 0.3f && trigger05 == true)
-            {
-                GetNextPoints();
-                trigger05 = false;
-                
-            }
-            yield return null;
-        }
+        rightArm01Animator.SetBool("doPattern", true);
+        Debug.Log("Access 1");
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Access 2");
+        rightArm01Animator.SetBool("doPattern", false);
+        yield return new WaitForSeconds(1f);
+        damagedGround.SetActive(true);
+        Debug.Log("Acces 3");
+        Debug.Log("Refrest the pattern");
+        canDoRightArm01 = true;
+        RefreshPattern();
         yield return new WaitForSeconds(2f);
-        RefreshPattern();
-
+        damagedGround.SetActive(false);
     }
-
-    void GetNextPoints()
+   
+    void bossDeath()
     {
-        wavePointsIndex++;
-        target = goToPoints[wavePointsIndex];
+        if (bossHealth <= 0)
+        {
+            Debug.Log(" you won !");
+            StopAllCoroutines();
+            Destroy(gameObject);
+        }
     }
 }

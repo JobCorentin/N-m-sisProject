@@ -7,6 +7,9 @@ TagManager:
   - Bullet
   - bossLeftArm01
   - LeftArmPositionPoint
+  - bossRightArm01
+  - damagedZone
+  - bossHead01
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - 
   - CameraConfiner
   - Player
-  - 
+  - PlayerConfiner
   - 
   - 
   - 
